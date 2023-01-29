@@ -28,7 +28,7 @@ int main(){
 	}
 	
 
-	printf("The matrix entered is: \n");
+	printf("The matrix entered is: \n");			// print the matrix
 	for(int i = 0; i < n; i++){
 		for(int j = 0; j < n; j++){
 			printf("%d\t", matrix[i][j]);
@@ -36,7 +36,7 @@ int main(){
 		printf("\n");
 	}
 
-	printf("Sum of all elements = %d\n", sum);
+	printf("Sum of all elements = %d\n", sum);		// print all the sums
 	printf("Sum of primary diagonal = %d\n", sumpd);
 	printf("Sum of secnodary diagonal = %d\n", sumsd);
 
