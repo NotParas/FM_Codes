@@ -11,7 +11,7 @@ int main(){
 
 	// take inputs
 
-	printf("Enter a number: ");
+	printf("Enter a number: ");			// take inputs
 	scanf("%d", &integer);
 
 	printf("Enter a character: ");
@@ -21,12 +21,11 @@ int main(){
 	scanf("%lf", &decimal);
 
 	printf("Enter a string: ");
-	scanf("%s", string);			// will terminate input at space
-									// gets() can be used to include spaces
+	scanf("%s", string);				// will terminate input at space
+							// gets() can be used to include spaces
 
-	// print outputs
 	printf("Number: %d\nCharacter: %c\nDecimal number: %lf\nString: %s\n",
-		integer, character, decimal, string); 
+		integer, character, decimal, string); 	// print outputs
 
 	return 0;
 }
