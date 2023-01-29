@@ -5,9 +5,9 @@ PROGRAM TO SORT AN ARRAY USING BUBBLE SORT AND SELECTION SORT BY IMPLEMENTING AL
 
 void bubbleSort(int arr[], int n){
 	int c;								// for swapping		
-	for(int i = 0; i < n-1; i++){		// n-1 passes are need for bubble sort
+	for(int i = 0; i < n-1; i++){					// n-1 passes are need for bubble sort
 		for(int j = 0; j < n-i-1; j++){ 
-			if(arr[j] > arr[j+1]){		// if element is greater than next element
+			if(arr[j] > arr[j+1]){				// if element is greater than next element
 				c = arr[j];				// swap
 				arr[j] = arr[j+1];
 				arr[j+1] = c;
@@ -18,15 +18,15 @@ void bubbleSort(int arr[], int n){
 void selectionSort(int arr[], int n){
 	int c;
 	int min;
-	for(int i = 0; i < n-1; i++){		// if n-1 elements are sorted it means (n)th element is automatically sorted
+	for(int i = 0; i < n-1; i++){					// if n-1 elements are sorted it means (n)th element is automatically sorted
 		min = i;
 		for(int j = i+1; j < n; j++){
-			if(arr[min] > arr[j]){	// find the index of smallest element
+			if(arr[min] > arr[j]){				// find the index of smallest element
 				min = j;
 			}
 		}
 		if(min != i){
-			c = arr[min];				// swap
+			c = arr[min];					// swap
 			arr[min] = arr[i];
 			arr[i] = c;
 		}
@@ -54,12 +54,12 @@ int main(){
 	}
 
 	printf("Sorted array after bubble sort: ");
-	bubbleSort(arr1, n);
-	printArray(arr1, n);
+	bubbleSort(arr1, n);						// call the function
+	printArray(arr1, n);						// print the array
 
 	printf("Sorted array after selection sort: ");
-	selectionSort(arr2, n);
-	printArray(arr2, n);
+	selectionSort(arr2, n);						// call the function
+	printArray(arr2, n);						// print the array
 
 	return 0;
 }
