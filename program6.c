@@ -18,7 +18,7 @@ int main(){
 	printf("Input: ");	
 	scanf(" %c", &c);
 
-	double n1, n2;								// operands
+	double n1, n2;									// operands
 	switch(c){									// switch based on option chosen by the user
 	case '+':
 		printf("Enter number 1 and number 2: ");
