@@ -1,2 +1,5 @@
 # FM_Codes
-Codes for FM taskphase
+
+Created by: Paras Dudhe
+
+C programs for problems sent on FM WA group.
